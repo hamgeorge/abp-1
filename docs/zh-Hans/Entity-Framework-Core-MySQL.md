@@ -15,7 +15,7 @@
 查找你的解决方案中 `UseSqlServer()`调用,替换为 `UseMySQL()`. 检查下列文件:
 
 * `.EntityFrameworkCore` 项目中的*YourProjectName*EntityFrameworkCoreModule.cs.
-* `.EntityFrameworkCore.DbMigrations` 项目中的*YourProjectName*MigrationsDbContextFactory.cs.
+* `.EntityFrameworkCore.DbMigrations` 项目中的*YourProjectName*MigrationsDbContextFactory.cs, 如*UseMySql(configuration.GetConnectionString("Default"), MySqlServerVersion.LatestSupportedServerVersion).
 
 > 根据你的解决方案的结构,你可能发现更多需要改变代码的文件.
 
